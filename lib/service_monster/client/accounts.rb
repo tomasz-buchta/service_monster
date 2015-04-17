@@ -6,6 +6,10 @@ module ServiceMonster
         response = get("accounts", options)
       end
 
+      def account(id, options = {})
+        response = get("accounts/#{id}", options)
+      end
+
     end
   end
 end
