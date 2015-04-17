@@ -38,6 +38,35 @@ end
 client = ServiceMonster.client
 ```
 
+### Resources
+
+There are currently two Service Monster resources implemented in this client; Accounts and Orders.
+See the parameters section below for information about what kinds of parameters can be sent to Service Monster.
+
+Getting a list of accounts:
+
+```ruby
+client.accounts(params)
+```
+
+Getting a single account (the id parameter is the Service Monster GUID for the account):
+
+```
+client.account(id, params)
+```
+
+Getting a list of orders:
+
+```ruby
+client.orders(params)
+```
+
+Getting a single order (the id parameter is the Service Monster GUID for the order):
+
+```ruby
+client.order(id, params)
+```
+
 ### Parameters
 
 ServiceMonster supports several parameters that can be passed to their API to change the results you receive.
